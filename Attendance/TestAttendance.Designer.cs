@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.StatusBar = new System.Windows.Forms.Label();
             this.textImgQuality = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -45,11 +46,6 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.BtnVerify = new System.Windows.Forms.Button();
             this.BtnRegister = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.comboBoxSecuLevel_V = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBoxSecuLevel_R = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.progressBar_V1 = new System.Windows.Forms.ProgressBar();
             this.pictureBoxV1 = new System.Windows.Forms.PictureBox();
@@ -83,11 +79,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.comboBoxSecuLevel_V = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBoxSecuLevel_R = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.BrightnessUpDown)).BeginInit();
             this.groupBoxUsbDevs.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -95,6 +95,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxR1)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // StatusBar
@@ -268,71 +269,6 @@
             this.BtnRegister.Text = "Register";
             this.BtnRegister.UseVisualStyleBackColor = false;
             this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.comboBoxSecuLevel_V);
-            this.groupBox6.Controls.Add(this.label14);
-            this.groupBox6.Controls.Add(this.label5);
-            this.groupBox6.Controls.Add(this.comboBoxSecuLevel_R);
-            this.groupBox6.Location = new System.Drawing.Point(5, 77);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(392, 56);
-            this.groupBox6.TabIndex = 30;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Security Level";
-            // 
-            // comboBoxSecuLevel_V
-            // 
-            this.comboBoxSecuLevel_V.Items.AddRange(new object[] {
-            "LOWEST",
-            "LOWER",
-            "LOW",
-            "BELOW_NORMAL",
-            "NORMAL",
-            "ABOVE_NORMAL",
-            "HIGH",
-            "HIGHER",
-            "HIGHEST"});
-            this.comboBoxSecuLevel_V.Location = new System.Drawing.Point(272, 24);
-            this.comboBoxSecuLevel_V.Name = "comboBoxSecuLevel_V";
-            this.comboBoxSecuLevel_V.Size = new System.Drawing.Size(112, 21);
-            this.comboBoxSecuLevel_V.TabIndex = 24;
-            this.comboBoxSecuLevel_V.Text = "NORMAL";
-            // 
-            // label14
-            // 
-            this.label14.Location = new System.Drawing.Point(208, 24);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 24);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "Verification";
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(8, 24);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 24);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Registration";
-            // 
-            // comboBoxSecuLevel_R
-            // 
-            this.comboBoxSecuLevel_R.Items.AddRange(new object[] {
-            "LOWEST",
-            "LOWER",
-            "LOW",
-            "BELOW_NORMAL",
-            "NORMAL",
-            "ABOVE_NORMAL",
-            "HIGH",
-            "HIGHER",
-            "HIGHEST"});
-            this.comboBoxSecuLevel_R.Location = new System.Drawing.Point(80, 24);
-            this.comboBoxSecuLevel_R.Name = "comboBoxSecuLevel_R";
-            this.comboBoxSecuLevel_R.Size = new System.Drawing.Size(112, 21);
-            this.comboBoxSecuLevel_R.TabIndex = 21;
-            this.comboBoxSecuLevel_R.Text = "NORMAL";
             // 
             // groupBox2
             // 
@@ -668,6 +604,71 @@
             this.label17.Text = "Device ID";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.comboBoxSecuLevel_V);
+            this.groupBox6.Controls.Add(this.label14);
+            this.groupBox6.Controls.Add(this.label5);
+            this.groupBox6.Controls.Add(this.comboBoxSecuLevel_R);
+            this.groupBox6.Location = new System.Drawing.Point(5, 77);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(392, 56);
+            this.groupBox6.TabIndex = 30;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Security Level";
+            // 
+            // comboBoxSecuLevel_V
+            // 
+            this.comboBoxSecuLevel_V.Items.AddRange(new object[] {
+            "LOWEST",
+            "LOWER",
+            "LOW",
+            "BELOW_NORMAL",
+            "NORMAL",
+            "ABOVE_NORMAL",
+            "HIGH",
+            "HIGHER",
+            "HIGHEST"});
+            this.comboBoxSecuLevel_V.Location = new System.Drawing.Point(272, 24);
+            this.comboBoxSecuLevel_V.Name = "comboBoxSecuLevel_V";
+            this.comboBoxSecuLevel_V.Size = new System.Drawing.Size(112, 21);
+            this.comboBoxSecuLevel_V.TabIndex = 24;
+            this.comboBoxSecuLevel_V.Text = "NORMAL";
+            // 
+            // label14
+            // 
+            this.label14.Location = new System.Drawing.Point(208, 24);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(64, 24);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "Verification";
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(8, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(72, 24);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Registration";
+            // 
+            // comboBoxSecuLevel_R
+            // 
+            this.comboBoxSecuLevel_R.Items.AddRange(new object[] {
+            "LOWEST",
+            "LOWER",
+            "LOW",
+            "BELOW_NORMAL",
+            "NORMAL",
+            "ABOVE_NORMAL",
+            "HIGH",
+            "HIGHER",
+            "HIGHEST"});
+            this.comboBoxSecuLevel_R.Location = new System.Drawing.Point(80, 24);
+            this.comboBoxSecuLevel_R.Name = "comboBoxSecuLevel_R";
+            this.comboBoxSecuLevel_R.Size = new System.Drawing.Size(112, 21);
+            this.comboBoxSecuLevel_R.TabIndex = 21;
+            this.comboBoxSecuLevel_R.Text = "NORMAL";
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -676,6 +677,7 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.StatusBar);
             this.Controls.Add(this.groupBox6);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Matching C# Sample";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -683,7 +685,6 @@
             this.groupBoxUsbDevs.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxV1)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -692,6 +693,7 @@
             this.tabPage1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

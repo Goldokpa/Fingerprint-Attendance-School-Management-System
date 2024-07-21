@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MarkAttendance));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblAcademicSession = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.lblLevel = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.lblCourseCode = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnHome = new System.Windows.Forms.Button();
@@ -78,10 +82,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCapture = new System.Windows.Forms.Button();
-            this.lblLevel = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblAcademicSession = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -130,6 +130,51 @@
             this.panel1.Size = new System.Drawing.Size(864, 589);
             this.panel1.TabIndex = 1;
             // 
+            // lblAcademicSession
+            // 
+            this.lblAcademicSession.AutoSize = true;
+            this.lblAcademicSession.Cursor = System.Windows.Forms.Cursors.No;
+            this.lblAcademicSession.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAcademicSession.Location = new System.Drawing.Point(123, 225);
+            this.lblAcademicSession.Name = "lblAcademicSession";
+            this.lblAcademicSession.Size = new System.Drawing.Size(261, 15);
+            this.lblAcademicSession.TabIndex = 121;
+            this.lblAcademicSession.Text = "-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Orchid;
+            this.label11.Location = new System.Drawing.Point(3, 225);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(126, 15);
+            this.label11.TabIndex = 120;
+            this.label11.Text = "Academic Session";
+            // 
+            // lblLevel
+            // 
+            this.lblLevel.AutoSize = true;
+            this.lblLevel.Cursor = System.Windows.Forms.Cursors.No;
+            this.lblLevel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLevel.Location = new System.Drawing.Point(546, 225);
+            this.lblLevel.Name = "lblLevel";
+            this.lblLevel.Size = new System.Drawing.Size(261, 15);
+            this.lblLevel.TabIndex = 119;
+            this.lblLevel.Text = "-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Orchid;
+            this.label10.Location = new System.Drawing.Point(457, 226);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(42, 15);
+            this.label10.TabIndex = 118;
+            this.label10.Text = "Level";
+            // 
             // lblCourseCode
             // 
             this.lblCourseCode.AutoSize = true;
@@ -155,6 +200,7 @@
             // btnHome
             // 
             this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.Orchid;
@@ -669,51 +715,6 @@
             this.btnCapture.Text = "Scan Thumb";
             this.btnCapture.UseVisualStyleBackColor = true;
             this.btnCapture.Click += new System.EventHandler(this.btnCapture_Click);
-            // 
-            // lblLevel
-            // 
-            this.lblLevel.AutoSize = true;
-            this.lblLevel.Cursor = System.Windows.Forms.Cursors.No;
-            this.lblLevel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLevel.Location = new System.Drawing.Point(546, 225);
-            this.lblLevel.Name = "lblLevel";
-            this.lblLevel.Size = new System.Drawing.Size(261, 15);
-            this.lblLevel.TabIndex = 119;
-            this.lblLevel.Text = "-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Orchid;
-            this.label10.Location = new System.Drawing.Point(457, 226);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 15);
-            this.label10.TabIndex = 118;
-            this.label10.Text = "Level";
-            // 
-            // lblAcademicSession
-            // 
-            this.lblAcademicSession.AutoSize = true;
-            this.lblAcademicSession.Cursor = System.Windows.Forms.Cursors.No;
-            this.lblAcademicSession.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAcademicSession.Location = new System.Drawing.Point(123, 225);
-            this.lblAcademicSession.Name = "lblAcademicSession";
-            this.lblAcademicSession.Size = new System.Drawing.Size(261, 15);
-            this.lblAcademicSession.TabIndex = 121;
-            this.lblAcademicSession.Text = "-  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Orchid;
-            this.label11.Location = new System.Drawing.Point(3, 225);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(126, 15);
-            this.label11.TabIndex = 120;
-            this.label11.Text = "Academic Session";
             // 
             // MarkAttendance
             // 
